@@ -9,7 +9,7 @@ const routes: Routes = [
     component: HomePage,
 
     children: [
-      {path: '', redirectTo: 'feed', pathMatch: 'full'},
+     
       {
         path: "feed",
         loadChildren: () =>
