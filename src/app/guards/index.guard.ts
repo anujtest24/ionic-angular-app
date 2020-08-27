@@ -16,7 +16,9 @@ export class IndexGuard implements CanActivate {
           if (res) {
             this.router.navigate(["home/feed"]);
             resolve(false);
-          } else resolve(true);
+          } else {
+            resolve(true);
+          }
         })
         .catch(err => {
           resolve(true);
